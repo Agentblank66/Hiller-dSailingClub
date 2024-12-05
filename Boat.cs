@@ -14,6 +14,7 @@
 		List<string> MaintenanceLog = new List<string>();
 		List<string> Repairs = new List<string>();
 
+		// dette er Constroctoren
 		public Boat(int id, double size, string motorInfo, int buildYear, string model, string type, int sailNr, string name)
 		{
 			Id = id;
@@ -26,6 +27,7 @@
 			BoatName = name;
 		}
 
+		// Printlog() udskriver alle strings i list til consolen og retunere List<string>
 		public List<string> PrintLog() 
 		{
 			foreach (var log in MaintenanceLog) 
@@ -35,12 +37,13 @@
 			return MaintenanceLog;
 		}
 
-
+		// metode tilføjer en string til List
 		public void RequestRepairs(string requestRepairs)
 		{
 			Repairs.Add(requestRepairs);
 		}
 
+		// ToString() bliver overskrevet så vi bestemmer hvordan den skriver når kaldet
 		public override string ToString()
 		{
 			return $"Boat {BoatName} has id:{Id} and is {Size} big as model {Model} and type {BoatType} with a {EngineInformation} Engine with sailnumber {SailingNumber} build in {BuildYear}";
