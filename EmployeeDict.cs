@@ -40,7 +40,7 @@ namespace HillerødSialingClub
 
         public void PrintAllEmployees()
         {
-            foreach (Employee emp in Employees)
+            foreach (Employee emp in Employees.Values)
             {
                 Console.WriteLine(emp.ToString());
             }
