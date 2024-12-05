@@ -21,11 +21,10 @@ namespace HillerødSialingClub
         {
             if (Employees.ContainsKey(emp.Id))
             {
-                Employees[emp].Id = emp.Id;
-                Employees[emp].Name = emp.Name;
-                Employees[emp].Tlf = emp.Tlf;
-                Employees[emp].Email = emp.Email;
-                Employees[emp].Address = emp.Address;
+                emp.Name = emp.Name;
+                emp.Tlf = emp.Tlf;
+                emp.Email = emp.Email;
+                emp.Address = emp.Address;
             }
         }
 
