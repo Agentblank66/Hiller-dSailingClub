@@ -30,5 +30,23 @@ namespace HillerødSialingClub
 				boat.BuildYear = boat.BuildYear;
 			}
 		}
+
+		public Boat GetBoat(int id)
+		{
+			return Boats[id];
+		}
+
+		public bool DeleteBoat(int id)
+		{
+			return Boats.Remove(id);
+		}
+
+		public void PrintAllBoat()
+		{
+			foreach (Boat boat in Boats.Values)
+			{
+				Console.WriteLine(boat);
+			}
+		}
 	}
 }
