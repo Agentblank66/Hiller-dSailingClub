@@ -12,7 +12,7 @@
 		public string BoatName { get; set; }
 
 		List<string> MaintenanceLog = new List<string>();
-		List<string> Repairs = new List<string>();
+		List<string> RepairsLog = new List<string>();
 
 		// dette er Constroctoren
 		public Boat(int id, double size, string motorInfo, int buildYear, string model, string type, int sailNr, string name)
@@ -27,8 +27,8 @@
 			BoatName = name;
 		}
 
-		// Printlog() udskriver alle strings i list til consolen og retunere List<string>
-		public List<string> PrintLog() 
+		// PrintMaintenanceLog() udskriver alle strings i list til consolen og retunere List<string>
+		public List<string> PrintMaintenanceLog() 
 		{
 			foreach (var log in MaintenanceLog) 
 			{
@@ -38,10 +38,27 @@
 		}
 
 		// metode tilføjer en string til List
+		public void AddToMaintenanceLog(string maintenanceString)
+		{
+			RepairsLog.Add(maintenanceString);
+		}
+
+		// PrintRepairsLog() udskriver alle strings i list til consolen og retunere List<string>
+		public List<string> PrintRepairsLog()
+		{
+			foreach (var log in RepairsLog)
+			{
+				Console.WriteLine(log);
+			}
+			return RepairsLog;
+		}
+
+		// metode tilføjer en string til List
 		public void RequestRepairs(string requestRepairs)
 		{
-			Repairs.Add(requestRepairs);
+			RepairsLog.Add(requestRepairs);
 		}
+
 
 		// ToString() bliver overskrevet så vi bestemmer hvordan den skriver når kaldet
 		public override string ToString()
