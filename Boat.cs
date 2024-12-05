@@ -1,4 +1,6 @@
-﻿namespace HillerødSialingClub
+﻿using System.Threading.Channels;
+
+namespace HillerødSialingClub
 {
 	public class Boat
 	{
@@ -65,5 +67,7 @@
 		{
 			return $"Boat {BoatName} has id:{Id} and is {Size} big as model {Model} and type {BoatType} with a {EngineInformation} Engine with sailnumber {SailingNumber} build in {BuildYear}";
 		}
+
+		public int nr = 0 ;
 	}
 }
