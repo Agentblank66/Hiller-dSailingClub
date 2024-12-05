@@ -1,6 +1,6 @@
 ﻿namespace HillerødSialingClub
 {
-    public class Class1
+    public class Member
     {
         public int age { get; set; }
         public int birthday { get; set; }
