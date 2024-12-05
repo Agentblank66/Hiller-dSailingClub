@@ -12,6 +12,7 @@
 		public string BoatName { get; set; }
 
 		List<string> MaintenanceLog = new List<string>();
+		List<string> Repairs = new List<string>();
 
 		public Boat(int id, double size, string motorInfo, int buildYear, string model, string type, int sailNr, string name)
 		{
@@ -32,6 +33,12 @@
                 Console.WriteLine(log);
 			}
 			return MaintenanceLog;
+		}
+
+
+		public void RequestRepairs(string requestRepairs)
+		{
+			Repairs.Add(requestRepairs);
 		}
 
 		public override string ToString()
