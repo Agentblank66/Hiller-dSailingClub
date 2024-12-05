@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace HillerødSialingClub
 {
-    internal class Person
+    public class Person
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Tlf {  get; set; }
+        public string Email { get; set; }
+        public string Address { get; set; }
     }
 }

@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace HillerødSialingClub
 {
-    internal class MemberDict
-    {
-    }
+  
+    
 }
