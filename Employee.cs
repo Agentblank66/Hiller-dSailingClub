@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace HillerødSialingClub
 {
-    internal class Employee
+    public class Employee
     {
+        private string Role {  get; set; }
     }
 }

@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace HillerødSialingClub
 {
-    internal class MemberDict
+    public class MemberDict
+
+        private Dictionary<int, Member> MemberD = new Dictionary<int, Member>();
+
+    public void Add(int id, Member member)
     {
+       
     }
+    
+    
 }
