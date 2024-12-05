@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace HillerødSialingClub
 {
-    internal class BoatDict
+    public class BoatDict
     {
+        Dictionary<Id, Boat> Boats = new Dictionary<Boat, Boat>();
+
+
     }
 }
