@@ -12,7 +12,7 @@ namespace HillerødSialingClub
         public int Id {  get; set; } 
         public string Name { get; set; }
         public string Description { get; set; }
-        public DateOnly Date { get; set; }
+        public DateTime Date { get; set; }
 
         List<Member> Participants = new List<Member>();
 
@@ -22,7 +22,7 @@ namespace HillerødSialingClub
             Id = id;
             Name = name;
             Description = description;
-            Date = date;
+            Date = new DateTime(year, month, day);
         }
         
         //Method which overrrides the base ConsoleWriteLine
