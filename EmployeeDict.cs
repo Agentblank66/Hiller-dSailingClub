@@ -18,7 +18,7 @@ namespace HillerødSialingClub
         }
 
         //Her laver vi en Update metode. Vi bruger nedstående metode.
-        //Vores "if" statement, skal finde alle members ved hjælp af søgefunktionen "ID"
+        //Vores "if" statement, skal finde alle Employees ved hjælp af søgefunktionen "ID"
         //Derfra kan vi hente Employeen, og ændre i deres oplysninger.
         public void Update(Employee emp)
         {
