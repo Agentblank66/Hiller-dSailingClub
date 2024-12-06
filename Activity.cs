@@ -17,7 +17,7 @@ namespace HillerødSialingClub
         List<Member> Participants = new List<Member>();
 
         public Activity() { }
-        public Activity(int id, string name, string description, DateOnly date) 
+        public Activity(int id, string name, string description, int year, int month, int day) 
         {
             Id = id;
             Name = name;
