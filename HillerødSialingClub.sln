@@ -5,10 +5,6 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HillerødSialingClub", "HillerødSialingClub.csproj", "{C909C5DA-85AB-4C30-B2C3-AC16E99BDE5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HillerødSailClub", "..\HillerødSailClub\HillerødSailClub.csproj", "{35089112-5DFD-447C-9242-0183DF284F26}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HillerødSejlklubConsole", "..\HillerødSejlklubConsole\HillerødSejlklubConsole.csproj", "{119D8CA8-31F5-43F6-9F4F-C1BF0D193449}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,14 +15,6 @@ Global
 		{C909C5DA-85AB-4C30-B2C3-AC16E99BDE5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C909C5DA-85AB-4C30-B2C3-AC16E99BDE5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C909C5DA-85AB-4C30-B2C3-AC16E99BDE5F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{35089112-5DFD-447C-9242-0183DF284F26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{35089112-5DFD-447C-9242-0183DF284F26}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{35089112-5DFD-447C-9242-0183DF284F26}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{35089112-5DFD-447C-9242-0183DF284F26}.Release|Any CPU.Build.0 = Release|Any CPU
-		{119D8CA8-31F5-43F6-9F4F-C1BF0D193449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{119D8CA8-31F5-43F6-9F4F-C1BF0D193449}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{119D8CA8-31F5-43F6-9F4F-C1BF0D193449}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{119D8CA8-31F5-43F6-9F4F-C1BF0D193449}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
