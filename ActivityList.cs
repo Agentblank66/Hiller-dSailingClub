@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -34,14 +35,14 @@ namespace HillerødSialingClub
         }
 
         //Method which updates an activity, by using the GetActivity method to find a specific activity and then changing that activitys parameters.
-        public void UpdateActivity(Activity activity, string name, string description, DateOnly date) 
+        public void UpdateActivity(Activity activity, string name, string description, int year, int month, int day) 
         {
             var theActivity = GetActivity(activity.Id);
             if (theActivity != null) 
             {
                 theActivity.Name = name;
                 theActivity.Description = description;
-                theActivity.Date = date;
+                theActivity.Date = new DateTime(year, month, day);
             }
         }
 
